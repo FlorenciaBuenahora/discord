@@ -1,0 +1,69 @@
+.header-home {
+    background-color: $home-background;
+    background-image: url(../assets/illustrations/header-home-background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 626px;
+}
+h1 {
+    color: $secondary;
+    font-family: $Kanit;
+    font-weight: 800;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.header-blurb {
+    max-width: 780px;
+}
+@media (min-width: 992px) {
+    .header-home .btn-appstore {
+        display: none;
+    }
+    .header-btns {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .header-btns a:nth-child(1) {
+        margin-right: 25px;
+    }
+
+}
+@media (max-width: 768px) {
+    .header-home {
+        background-position: 66%;
+    }
+    .header-blurb {
+        max-width: 452px;
+        margin-left: 24px;
+    }
+    .header-blurb h1 {
+        font-size: 35px;
+    }
+    .header-blurb p {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .header-home .header-btns {
+        display: none;
+    }
+    // .header-btns {
+    //     flex-direction: column;
+    // }
+    // .header-btns a:nth-child(1) {
+    //     margin-right: 0;
+    // }
+    // .header-btns a:nth-child(2) {
+    //     margin-top: 24px;
+    // }
+}
+@media (max-width: 576px) {
+    .header-home {
+        background-image: url(../assets/illustrations/mobile-header-home-background.svg);
+        background-position: center;
+    }
+    .header-blurb {
+        margin-left: auto;
+    }
+}

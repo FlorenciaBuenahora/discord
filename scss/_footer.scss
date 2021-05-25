@@ -1,0 +1,41 @@
+footer {
+    background-color: $font-color;
+}
+footer h3 {
+    color: $primary;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.social-media a {
+    color: $secondary;
+}
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+}
+footer h5 {
+    color: $primary;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+footer nav {
+    flex-wrap: wrap;
+}
+footer nav a {
+    color: $secondary;
+    text-decoration: none;
+
+    &:hover {
+        color: $secondary;
+        text-decoration: underline;
+    }
+}
+footer .sign-up {
+    border-top: 1px solid $primary;
+}
+footer .sign-up svg {
+    color: $secondary;
+}

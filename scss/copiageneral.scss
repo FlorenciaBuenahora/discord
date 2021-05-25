@@ -1,0 +1,110 @@
+// General
+p {
+    font-family: $primary-font;
+    color: $font-color;
+    font-size: 18px;
+    line-height: 32px;
+}
+h2 {
+    font-family: $Kanit;
+    font-size: 40px;
+    font-weight: 700;
+    color: $font-color;
+}
+// Nav
+.navbar-dark .navbar-toggler {
+    border: none;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+.navbar-dark .navbar-brand {
+    margin-right: 0;
+    color: $secondary;
+
+    &:hover {
+        color: $secondary;
+    }
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: $secondary;
+    font-family: $primary-font;
+    font-weight: 600;
+
+    &:hover {
+        text-decoration: underline;
+        color: $secondary;
+    }
+}
+// Buttons
+.btn {
+    font-family: $Kanit;
+    font-weight: 500;
+    border-radius: 16px;
+
+    &:hover {
+        box-shadow: $box-shadow;
+    }
+}
+.btn-secondary {
+    color: $font-color;
+
+    &:hover {
+        color: $primary;
+    }
+}
+.btn-terciary {
+    color: $secondary;
+    background-color: $font-color;
+
+    &:hover {
+        color: $secondary;
+        background-color: $light-terciarybtn;
+    }
+}
+// Header
+header p {
+    color: $secondary;
+    font-size: 18px;
+    line-height: 38px;
+}
+
+// // Sections
+// .spacer {
+//     padding: ($spacer * 8) 0.75rem;
+// }
+
+// Media queries
+
+@media (max-width: 768px) {
+    .navbar .container {
+        justify-content: unset;
+    }
+    .navbar-brand {
+        flex-grow: 4;
+    }
+    .login-lg{
+        display: none; 
+    }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    // .spacer {
+    //     padding: ($spacer * 6) 1.5rem;
+    // }
+}
+@media (min-width: 992px) {
+    .login-sm {
+        display: none; 
+    }
+}
+// @media (max-width: 576px) {
+//     .spacer {
+//         padding: ($spacer * 5) 0.75rem;
+//     }
+// }
