@@ -2,10 +2,12 @@
 body {
     font-family: $primary-font;
 }
-p {
-    color: $font-color;
-    font-size: 16px;
-    line-height: 28px;
+h1 {
+    color: $secondary;
+    font-family: $Kanit;
+    font-weight: 800;
+    font-size: 35px;
+    text-transform: uppercase;
 }
 h2, h3 {
     font-family: $Kanit;
@@ -18,6 +20,11 @@ h2 {
 h3 {
     font-size: 32px;
     font-weight: 600;
+}
+p {
+    color: $font-color;
+    font-size: 16px;
+    line-height: 28px;
 }
 .bg-light-color {
     background-color: $bg-light;
@@ -96,6 +103,9 @@ h3 {
     display: none;
 }
 // Header
+header {
+    background-color: $primary;
+}
 header p {
     color: $secondary;
     font-size: 18px;
