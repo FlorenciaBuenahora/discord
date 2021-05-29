@@ -11,6 +11,12 @@
 .header-about img {
     max-width: 90%;
 }
+.our-story h2 {
+    font-weight: 800;
+}
+.story-img {
+    max-width: 95%;
+}
 @include media-breakpoint-up(lg) {
     .about-blurb {
         max-width: 500px;
@@ -24,4 +30,5 @@
     .header-about p {
         font-size: 18px;
     }
+    
 }
