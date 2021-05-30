@@ -14,15 +14,18 @@
 .our-story h2 {
     font-weight: 800;
 }
-.story-img {
-    max-width: 95%;
+.our-story h4 {
+    color: $primary;
+}
+.office {
+    background-color: $font-color;
+}
+.office h2 {
+    color: $secondary;
 }
 @include media-breakpoint-up(lg) {
     .about-blurb {
         max-width: 500px;
-    }
-    .header-about img {
-        max-width: none;
     }
     .about-blurb h1 {
         font-size: 50px;
