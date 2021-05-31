@@ -1,0 +1,20 @@
+.header-jobs p {
+    max-width: 780px;
+}
+.video {
+    max-width: 80%;
+}
+.video iframe {
+    border-radius: 16px;
+}
+@include media-breakpoint-down(md) {
+    .header-jobs p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+@include media-breakpoint-up(lg) {
+    .header-jobs h1 {
+        font-size: 50px;
+    }
+}

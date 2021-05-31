@@ -17,11 +17,22 @@
 .our-story h4 {
     color: $primary;
 }
-.office {
+.office, .work-with-us {
     background-color: $font-color;
+}
+.work-with-us .card {
+    border-radius: 16px;
 }
 .office h2 {
     color: $secondary;
+}
+.work-with-us .btn {
+    width: 100%;
+}
+@include media-breakpoint-up(md) {
+    .work-with-us .btn {
+        width: unset;
+    }
 }
 @include media-breakpoint-up(lg) {
     .about-blurb {
