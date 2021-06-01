@@ -50,11 +50,6 @@
 .img-box4 img {
     width: 95%;
 }
-@include media-breakpoint-down(md) {
-    .header-jobs p {
-        
-    }
-}
 @include media-breakpoint-up(md) {
     .video {
         max-width: 80%;
