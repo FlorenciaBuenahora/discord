@@ -1,20 +1,135 @@
 .header-jobs p {
     max-width: 780px;
+    font-size: 16px;
+    line-height: 28px;
+}
+.container-jobs {
+    height: 900px;
+    position: relative;
+    overflow: hidden;
 }
 .video {
-    max-width: 80%;
+    max-width: unset;
+    z-index: 2;
 }
 .video iframe {
     border-radius: 16px;
 }
+// Imgs header
+.box {
+    position: absolute;
+}
+.box img {
+    border-radius: 16px;
+}
+.img-box1 {
+    top: 50%;
+    left: -11%;
+}
+.img-box1 img {
+    width: 100%;
+}
+.img-box2 {
+    top: 75%;
+    left: -28%;
+}
+.img-box2 img {
+    width: 60%;
+}
+.img-box3 {
+    top: 58%;
+    left: 42%;
+}
+.img-box3 img {
+    width: 75%;
+}
+.img-box4 {
+    top: 77%;
+    left: 53%;
+}
+.img-box4 img {
+    width: 95%;
+}
 @include media-breakpoint-down(md) {
     .header-jobs p {
-        font-size: 16px;
-        line-height: 28px;
+        
+    }
+}
+@include media-breakpoint-up(md) {
+    .video {
+        max-width: 80%;
+    }
+    .container-jobs {
+        height: 1230px;
+    }
+    // Imgs header
+    .img-box1 {
+        top: 48%;
+        left: -21%;
+    }
+    .img-box1 img {
+        width: 55%;
+    }
+    .img-box2 {
+        top: 73%;
+        left: -26%;
+    }
+    .img-box2 img {
+        width: 26%;
+    }
+    .img-box3 {
+        top: 61%;
+        left: 28%;
+    }
+    .img-box3 img {
+        width: 38%;
+    }
+    .img-box4 {
+        top: 79%;
+        left: 24%;
+    }
+    .img-box4 img {
+        width: 50%;
     }
 }
 @include media-breakpoint-up(lg) {
     .header-jobs h1 {
         font-size: 50px;
+    }
+    .header-jobs p {
+        font-size: 18px;
+        line-height: 38px;
+    }
+    .container-jobs {
+        height: unset;
+    }
+    // Imgs header
+    .img-box1 {
+        top: 32%;
+        left: -34%;
+    }
+    .img-box1 img {
+        width: 30%;
+    }
+    .img-box2 {
+        top: 82%;
+        left: -33%;
+    }
+    .img-box2 img {
+        width: 14%;
+    }
+    .img-box3 {
+        top: 36%;
+        left: 32%;
+    }
+    .img-box3 img {
+        width: 20%;
+    }
+    .img-box4 {
+        top: 78%;
+        left: 31%;
+    }
+    .img-box4 img {
+        width: 28%;
     }
 }
