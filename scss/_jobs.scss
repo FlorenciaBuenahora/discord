@@ -112,6 +112,13 @@
 .filters .card-body svg {
     color: $primary;
 }
+
+.perks {
+    background-color: $bg-lila;
+}
+.perks svg, .perks p {
+    color: $secondary;
+}
 // Media queries
 @include media-breakpoint-up(md) {
     // Header
