@@ -18,17 +18,23 @@
 .our-story h4 {
     color: $primary;
 }
-.office, .work-with-us {
-    background-color: $font-color;
-}
-.work-with-us .card {
-    border-radius: 16px;
-}
 .office h2 {
     color: $secondary;
 }
-.work-with-us .btn {
-    width: 100%;
+.office, .work-with-us {
+    background-color: $font-color;
+}
+.work-with-us {
+
+    .card {
+        border-radius: 16px;
+    }
+    h4 {
+        color: $primary;
+    }
+    .btn {
+        width: 100%;
+    }
 }
 @include media-breakpoint-up(md) {
     .work-with-us .btn {
