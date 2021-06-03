@@ -12,44 +12,51 @@
 .video {
     max-width: unset;
     z-index: 2;
+
+    iframe {
+        border-radius: 16px;
+    }
 }
-.video iframe {
-    border-radius: 16px;
-}
+
 // Imgs header
 .box {
     position: absolute;
-}
-.box img {
-    border-radius: 16px;
-}
+
+    img {
+        border-radius: 16px;
+    }
+} 
 .img-box1 {
     top: 50%;
     left: -11%;
-}
-.img-box1 img {
-    width: 100%;
+
+    img {
+        width: 100%;
+    }
 }
 .img-box2 {
     top: 75%;
     left: -28%;
-}
-.img-box2 img {
-    width: 60%;
+
+    img {
+        width: 60%;
+    }
 }
 .img-box3 {
     top: 58%;
     left: 42%;
-}
-.img-box3 img {
-    width: 75%;
+
+    img {
+        width: 75%;
+    }
 }
 .img-box4 {
     top: 77%;
     left: 53%;
-}
-.img-box4 img {
-    width: 95%;
+
+    img {
+        width: 95%;
+    }
 }
 
 // Jobs
@@ -82,43 +89,54 @@
 .filters > ul > li:last-child > button {
     margin-right: 0;
 }
-.filters .card h4 {
+.filters .card {
+
+    h4 {
     font-family: $primary-font;
     font-size: 18px;
     line-height: 30px;
     font-weight: 600;
-}
-.filters .card p {
-    font-size: 14px;
-}
-.filters .tab-content a {
-    color: unset;
-
-    &:hover {
-        border-radius: 16px;
-        text-decoration: none;
-        box-shadow: $box-shadow;
+    }
+    p {
+        font-size: 14px;
     }
 }
-.filters .tab-content .card {
-    border: none;
-    border-radius: 16px;
-    box-shadow: $box-shadow-sm;
-}
-.filters .card-body p {
-    margin-bottom: 7px;
-    line-height: 0;
-}
-.filters .card-body svg {
-    color: $primary;
-}
 
+.filters .tab-content {
+
+    a { 
+    color: unset;
+
+        &:hover {
+            border-radius: 16px;
+            text-decoration: none;
+            box-shadow: $box-shadow;
+        }
+    }
+    .card {
+        border: none;
+        border-radius: 16px;
+        box-shadow: $box-shadow-sm;
+
+        .card-body {
+
+            p {
+            margin-bottom: 7px;
+            line-height: 0;
+            }
+            svg {
+                color: $primary;
+            }
+        }
+    }
+}
 .perks {
     background-color: $bg-lila;
-}
-.perks svg, .perks p {
-    color: $secondary;
-}
+
+    svg, p {
+        color: $secondary;
+    }
+} 
 // Media queries
 @include media-breakpoint-up(md) {
     // Header
@@ -132,40 +150,47 @@
     .img-box1 {
         top: 48%;
         left: -21%;
-    }
-    .img-box1 img {
-        width: 55%;
+
+        img {
+            width: 55%;
+        }
     }
     .img-box2 {
         top: 73%;
         left: -26%;
-    }
-    .img-box2 img {
-        width: 26%;
+
+        img {
+            width: 26%;
+        }
     }
     .img-box3 {
         top: 61%;
         left: 28%;
-    }
-    .img-box3 img {
-        width: 38%;
+
+        img {
+            width: 38%;
+        }
     }
     .img-box4 {
         top: 79%;
         left: 24%;
-    }
-    .img-box4 img {
-        width: 50%;
+
+        img {
+            width: 50%;
+        }
     }
 }
 @include media-breakpoint-up(lg) {
     // Header
-    .header-jobs h1 {
-        font-size: 50px;
-    }
-    .header-jobs p {
-        font-size: 18px;
-        line-height: 38px;
+    .header-jobs {
+
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 38px;
+        }
     }
     .container-jobs {
         height: unset;
@@ -174,29 +199,33 @@
     .img-box1 {
         top: 32%;
         left: -34%;
-    }
-    .img-box1 img {
-        width: 30%;
+
+        img {
+            width: 30%;
+        }
     }
     .img-box2 {
         top: 82%;
         left: -28%;
-    }
-    .img-box2 img {
-        width: 14%;
+
+        img {
+            width: 14%;
+        }
     }
     .img-box3 {
         top: 36%;
         left: 32%;
-    }
-    .img-box3 img {
-        width: 20%;
+
+        img {
+            width: 20%;
+        }
     }
     .img-box4 {
         top: 72%;
         left: 31%;
-    }
-    .img-box4 img {
-        width: 28%;
+
+        img {
+            width: 28%;
+        }
     }
 }

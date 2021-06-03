@@ -31,6 +31,12 @@ p {
     font-size: 16px;
     line-height: 28px;
 }
+
+.padding {
+    @extend .py-5;
+    @extend .py-md-6; 
+    @extend .py-lg-7;
+}
 .bg-light-color {
     background-color: $bg-light;
 }
@@ -45,17 +51,16 @@ p {
         box-shadow: none;
     }
 }
-.navbar-dark .navbar-brand {
+.navbar-brand {
     margin-right: 0;
     color: $secondary;
+    flex-grow: 4;
 
     &:hover {
         color: $secondary;
     }
 }
-.navbar-brand {
-    flex-grow: 4;
-}
+
 .navbar-dark .navbar-nav .nav-link {
     color: $secondary;
     font-family: $primary-font;
@@ -84,9 +89,10 @@ p {
 }
 .btn-primary {
     border: none;
-}
-.btn-primary:hover {
-    background-color: $light-primarybtn;
+
+    &:hover {
+        background-color: $light-primarybtn;
+    }
 }
 .btn-secondary {
     color: $font-color;
@@ -110,12 +116,14 @@ p {
 // Header
 header {
     background-color: $primary;
+
+    p {
+        color: $secondary;
+        font-size: 18px;
+        line-height: 38px;
+    }
 }
-header p {
-    color: $secondary;
-    font-size: 18px;
-    line-height: 38px;
-}
+
 .sparkles {
     background-image: url(../assets/illustrations/sparkles.svg);
     background-repeat: no-repeat;
@@ -123,19 +131,14 @@ header p {
     background-size: cover;
 }
 
-// // Sections
-// .spacer {
-//     padding: ($spacer * 8) 0.75rem;
-// }
-
 // Media queries
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(md) {
     .sparkles {
         background-size: unset;
     }
 }
-@media (min-width: 992px) {
+@include media-breakpoint-up(lg) {
     .navbar .container {
         justify-content: space-between;
     }
@@ -168,8 +171,3 @@ header p {
         justify-content: center;
     }
 }
-// @media (max-width: 576px) {
-//     .spacer {
-//         padding: ($spacer * 5) 0.75rem;
-//     }
-// }

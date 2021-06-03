@@ -4,9 +4,10 @@
 }
 .about-blurb {
     max-width: 630px;
-}
-.about-blurb h1 {
-    font-size: 44px;
+
+    h1 {
+        font-size: 44px;
+    }
 }
 .header-about img {
     max-width: 90%;
@@ -37,12 +38,11 @@
 @include media-breakpoint-up(lg) {
     .about-blurb {
         max-width: 500px;
-    }
-    .about-blurb h1 {
-        font-size: 50px;
+        h1 {
+            font-size: 50px;
+        }
     }
     .header-about p {
         font-size: 18px;
     }
-    
 }
