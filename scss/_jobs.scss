@@ -69,13 +69,23 @@
     margin-right: 10px;
     margin-bottom: 10px;
     padding: 16px 32px;
+
+    &:hover {
+        color: $primary;
+        box-shadow: $box-shadow;
+    }
 }
+.filters .nav-pills .active:hover {
+    color: $secondary;
+}
+
 .filters > ul > li:last-child > button {
     margin-right: 0;
 }
 .filters .card h4 {
     font-family: $primary-font;
     font-size: 18px;
+    line-height: 30px;
     font-weight: 600;
 }
 .filters .card p {
@@ -163,7 +173,7 @@
     }
     .img-box2 {
         top: 82%;
-        left: -34%;
+        left: -28%;
     }
     .img-box2 img {
         width: 14%;
@@ -176,7 +186,7 @@
         width: 20%;
     }
     .img-box4 {
-        top: 78%;
+        top: 72%;
         left: 31%;
     }
     .img-box4 img {
